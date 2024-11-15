@@ -1,0 +1,215 @@
+.image-wrapper {
+    overflow: hidden;
+    position: relative;
+    height: fit-content;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.rotate-svg {
+    animation: rotate 5s linear infinite;
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 1000px) {
+    .rotate-svg {
+        width: 900px;
+        height: 900px;
+    }
+
+    .image-wrapper {
+        margin-top: -530px;
+    }
+}
+
+
+@media (max-width: 999px) {
+    .rotate-svg {
+        width: 600px;
+        height: 600px;
+    }
+
+    .image-wrapper {
+        margin-top: -370px;
+    }
+}
+
+@media (max-width: 620px) {
+    .rotate-svg {
+        width: 500px;
+        height: 500px;
+    }
+
+    .image-wrapper {
+        margin-top: -290px;
+    }
+}
+
+@media (max-width: 500px) {
+    .rotate-svg {
+        width: 400px;
+        height: 400px;
+    }
+
+    .image-wrapper {
+        margin-top: -270px;
+    }
+}
+
+@media (max-width: 400px) {
+    .rotate-svg {
+        width: 350px;
+        height: 350px;
+    }
+
+    .image-wrapper {
+        margin-top: -210px;
+    }
+}
+
+.slide-down-fade-in {
+    animation: slideDownFadeIn 2.5s ease-out;
+}
+
+@keyframes slideDownFadeIn {
+    0% {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.digital-platform {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url('/src/assets/homebg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.digital-platform-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    gap: 3rem;
+
+    img {
+        height: 4rem;
+    }
+}
+
+.digital-platform-inner {
+    display: flex;
+    gap: 10px;
+    /* İkonlar arasındaki boşluk */
+}
+
+.digital-platform-inner img {
+    opacity: 0;
+    /* İlk başta görünmez yap */
+    transform: translateY(20px);
+    /* Yukarıdan gelsin */
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.digital-platform-inner img:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.digital-platform-inner img:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.digital-platform-inner img:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+.digital-platform-inner img:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-family: 'Brittany Signature', sans-serif;
+}
+
+
+@media (max-width: 600px) {
+    .digital-platform-inner {
+        img {
+            height: 3rem;
+        }
+    }
+
+}
+
+@media (max-width: 390px) {
+    .digital-platform-inner {
+        img {
+            height: 2.4rem;
+        }
+    }
+
+    .section-social {
+        img {
+            height: 3rem !important;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .digital-platform-inner {
+        img {
+            height: 2.4rem;
+        }
+    }
+
+    .section-social {
+        img {
+            height: 3rem !important;
+        }
+    }
+}
+
+.section {
+    margin-top: 1rem;
+}
+
+.section-social {
+    margin-top: 5rem;
+}

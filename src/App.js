@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import ReactPageScroller from 'react-page-scroller';
+import { useRef } from 'react';
+import DigitalPlatform from './components/digital-platform/DigitalPlatform';
+import HomePage from './components/home-page/HomePage';
+import VideosPage from './components/videos-page/VideosPage';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const pageScrollerRef = useRef(null);
+    return (
+        <div className="App">
+            <div className='home-page-body'>
+                <ReactPageScroller ref={pageScrollerRef}>
+                   <DigitalPlatform />
+                   <VideosPage />
+                   <div>5</div>
+                   <div>6</div>
+                </ReactPageScroller>
+            </div>
+        </div>
+    );
 }
 
 export default App;
