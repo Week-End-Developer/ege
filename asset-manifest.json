@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ege/static/css/main.d42feb3c.css",
-    "main.js": "/ege/static/js/main.a73af3af.js",
-    "static/js/453.bc3b3b3e.chunk.js": "/ege/static/js/453.bc3b3b3e.chunk.js",
+    "main.js": "/ege/static/js/main.ebb75346.js",
+    "static/js/453.be7da176.chunk.js": "/ege/static/js/453.be7da176.chunk.js",
     "static/media/bg.png": "/ege/static/media/bg.aefcdee67ac52297b12f.png",
     "static/media/recordsvg.svg": "/ege/static/media/recordsvg.0fb00c20a78f18d895838c3f267085bf.svg",
     "static/media/instagram.png": "/ege/static/media/instagram.4944ffe0f1aa709e42d1.png",
@@ -15,11 +15,11 @@
     "static/media/apple.svg": "/ege/static/media/apple.2f35919e45cbb458eb11b4e8a4f17795.svg",
     "index.html": "/ege/index.html",
     "main.d42feb3c.css.map": "/ege/static/css/main.d42feb3c.css.map",
-    "main.a73af3af.js.map": "/ege/static/js/main.a73af3af.js.map",
-    "453.bc3b3b3e.chunk.js.map": "/ege/static/js/453.bc3b3b3e.chunk.js.map"
+    "main.ebb75346.js.map": "/ege/static/js/main.ebb75346.js.map",
+    "453.be7da176.chunk.js.map": "/ege/static/js/453.be7da176.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d42feb3c.css",
-    "static/js/main.a73af3af.js"
+    "static/js/main.ebb75346.js"
   ]
 }
